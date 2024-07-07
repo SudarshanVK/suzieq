@@ -1,0 +1,25 @@
+temp-directory: /tmp/
+data-directory: /home/suzieq/parquet
+
+rest:
+  API_KEY: asdfghjklqwertyuiopzxcvbnm
+  address: 0.0.0.0
+  port: 8000
+  logfile: /tmp/sq-rest-server.log
+  logging-level: WARNING
+  log-stdout: true
+  no-https: true
+
+poller:
+  manager:
+    workers: 2
+  logfile: /tmp/sq-poller.log
+  logging-level: WARNING
+  log-stdout: true
+  period: 60
+
+coalescer:
+  period: 1h
+  archive-directory:
+  logging-level: WARNING
+  log-stdout: true
